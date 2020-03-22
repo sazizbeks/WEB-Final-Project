@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Новые мутанты | EasyMovies</title>
+
+    <link rel="short icon" href="../img/icons-and-logos/film.svg">
+    <link rel="stylesheet" href="../style/movie-site.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+    <script src="../script/script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <a href="../main.html">
+                <div class="website-block">
+                    <img src="../img/icons-and-logos/film.svg" alt="">
+                    <h1>EasyMovies</h1>
+                </div>
+            </a>
+
+            <div class="search-block">
+                <form action="">
+                    <input type="search" placeholder="Поиск..." class="search">
+                    <input type="submit" class="search-submit" value="">
+                </form>
+            </div>
+
+            <div class="login">
+                <div class="login-visible">
+                    <button type="button" id="login" onclick="login_visible()">ВХОД</button>
+                    <a href="../create-acc.html" id="registration">РЕГИСТРАЦИЯ</a>
+                </div>
+                <div id="login-notvisible">
+                    <form action="" method="POST">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <nav class="top-nav">
+            <ul class="navbar">
+                <li><a href="../main.html">Главная</a></li>
+                <li class="nav-nested"><span>Жанры</span>
+                    <ul class="nav-inner">
+                        <li><a href="../anime.html">Аниме</a></li>
+                        <li><a href="../action.html">Боевик</a></li>
+                        <li><a href="../war.html">Военный</a></li>
+                        <li><a href="../comedy.html">Комедия</a></li>
+                        <li><a href="../cartoon.html">Мультфильм</a></li>
+                        <li><a href="../sport.html">Спорт</a></li>
+                        <li><a href="../horror.html">Ужасы</a></li>
+                        <li><a href="../fantasy.html">Фантастика</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.kinonews.ru/kassa_top100/">TOP-100</a></li>
+            </ul>
+
+            
+            <button id="menu" onclick="secondVisible()">Меню</button>
+            <ul id="second-navbar">
+                <li><a href="../main.html">Главная</a></li>
+                <li class="nav-nested" onclick="secondNavGenre()">
+                    <span>Жанры</span>
+                    <ul class="nav-inner" id="second-nav-genre">
+                        <li><a href="../anime.html">Аниме</a></li>
+                        <li><a href="../action.html">Боевик</a></li>
+                        <li><a href="../war.html">Военный</a></li>
+                        <li><a href="../comedy.html">Комедия</a></li>
+                        <li><a href="../cartoon.html">Мультфильм</a></li>
+                        <li><a href="../sport.html">Спорт</a></li>
+                        <li><a href="../horror.html">Ужасы</a></li>
+                        <li><a href="../fantasy.html">Фантастика</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.kinonews.ru/kassa_top100/">TOP-100</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <div class="soon">
+                <h3 id="soonn">Скоро в кино</h3>
+                <h3 id="soon" onclick="soon()">Скоро в кино</h3>
+                <hr>
+                <div id="soon-block">
+                    <div class="soon-movie">
+                        <a href="../movies/new-mutants.html">
+                            <img class="soon-img" src="../img/soon/new-mutants.jpg" alt="">
+                        </a>
+                        <a class="movie-title" href="../movies/new-mutants.html">Новые мутанты</a>
+                    </div>
+
+                    <div class="soon-movie">
+                        <a href="../movies/mulan.html">
+                            <img class="soon-img" src="../img/soon/mulan.jpg" alt="">
+                        </a>
+                        <a class="movie-title" href="../movies/mulan.html">Мулан</a>
+                    </div>
+
+                    <div class="soon-movie">
+                        <a href="../movies/pobeg-iz-pretorii.html">
+                            <img class="soon-img" src="../img/soon/pobeg-iz-pretorii.jpg" alt="">
+                        </a>
+                        <a class="movie-title" href="../movies/pobeg-iz-pretorii.html">Побег из Претории</a>
+                    </div>
+
+                    <div class="soon-movie">
+                        <a href="../movies/vivarium.html">
+                            <img class="soon-img" src="../img/soon/vivarium.jpg" alt="">
+                        </a>
+                        <a class="movie-title" href="../movies/vivarium.html">Вивариум</a>
+                    </div>
+
+                    <div class="soon-movie">
+                        <a href="../movies/feya.html">
+                            <img class="soon-img" src="../img/soon/feya.jpg" alt="">
+                        </a>
+                        <a class="movie-title" href="../movies/feya.html">Фея</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="movie">
+                <div class="movie-block">
+                    <img class="m-img" src="../img/soon/new-mutants.jpg" alt="">
+
+                    <div class="movie-desc">
+                        <h3>Новые мутанты</h3>
+                        <ul class="movie-description">
+                            <li><b>Год выхода:</b></li>
+                            <li>2020</li>
+                            <li><b>Страна:</b></li>
+                            <li>США</li>
+                            <li><b>Жанр:</b></li>
+                            <li>Ужасы</li>
+                            <li><b>В главных ролях:</b></li>
+                            <li>Аня Тейлор-Джой, Мэйси Уильямс, Хэппи Андерсон, Блю Хант, Томас Ки, Чарли Хитон, Алиси Брага, Генри Зага, Мики Гилмор, Джеффри Кораццини</li>
+                            <li><b>Длительность:</b></li>
+                            <li>-- мин.</li>
+                        </ul>
+                        <p class="movie-summary">
+                            Фильм "Новые мутанты" рассказывает о некой школе, которая находится под руководством профессора Ксавьера. Эта школа необычная, в ней обучаются люди - мутанты. Эти люди имеют разные сверхъестественные способности. Способности они в будущем смогут применить на благо человечеству.
+
+По сюжету фильма в школу поступает новое поколение людей - мутантов, их задача обучиться многому новому и интересному, а также, управлять своими способностями. Но, несколько одаренных студентов объединяются в группу, чтобы научиться совмещать свои сверхъестественные способности и бороться со злом.
+
+У каждого персонажа своя способность, в этот отряд входят Сэм Гантри, который имеет прозвище - Пушечное Ядро, Санспот - мутант, поглощающий солнечную энергию и управляющий ею. Магма, которой подвластен парокинез, Магика - создает и управляет телепорты, Карма, которой подвластна телепатия и несколько других персонажей, которые тоже имеют сверхъестественные способности. Он них зависит жизнь каждого человека.
+
+На наш мир нападают враги, они хотят воплотить в жизнь свои коварные планы. Помешать им должны мутанты, но они еще так молоды и озадачены только учебой и отношениями между собой. Смогут ли они противостоять злу и спасти человечество?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rating-block">
+                    <h2>Оценка</h2>
+                    <ul>
+                        <li>
+                            <img src="../img/icons-and-logos/imdb.png" alt="">
+                            <span>IMDB: --</span>
+                        </li>
+                        <li>
+                            <img src="../img/icons-and-logos/kinopoisk.png" alt="">
+                            <span>Kinopoisk: --</span>
+                        </li>
+                        <li>
+                            <img src="../img/icons-and-logos/metacritic.png" alt="">
+                            <span>Metacritic: --</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="trailer-block">
+                    <div class="trailer">
+                        <h2>Трейлер</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hDLzl7CAcKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <div class="support footer-flex-item">
+                <h4>Поддержка</h4>
+                <ul>
+                    <li>support@example.com</li>
+                    <li>+0123456789</li>
+                </ul>
+            </div>
+
+            <div class="social-network footer-flex-item">
+                <h4>Мы в соц.сетях</h4>
+                <ul>
+                    <li><a href="https://vk.com/" class="soc-network"><img src="../img/icons-and-logos/vk.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/" class="soc-network"><img src="../img/icons-and-logos/insta.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/" class="soc-network"><img src="../img/icons-and-logos/facebook.png" alt=""></a></li>
+                    <li><a href="https://twitter.com/" class="soc-network"><img src="../img/icons-and-logos/twitter.png" alt=""></a></li>
+                </ul>
+            </div>
+
+            <span>© 2020 "EasyMovies.com"</span>
+        </footer>
+
+    </div>
+    <button id="go-top" type="button" title="Наверх"><span>^</span></button>
+</body>
+</html>

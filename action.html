@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Боевик | EasyMovies</title>
+    <link rel="short icon" href="img/icons-and-logos/film.svg">
+    <link rel="stylesheet" href="style/mainstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <a href="main.html">
+                <div class="website-block">
+                    <img src="img/icons-and-logos/film.svg" alt="">
+                    <h1>EasyMovies</h1>
+                </div>
+            </a>
+
+            <div class="search-block">
+                <form action="">
+                    <input type="search" placeholder="Поиск..." class="search">
+                    <input type="submit" class="search-submit" value="">
+                </form>
+            </div>
+
+            <div class="login">
+                <div class="login-visible">
+                    <button type="button" id="login" onclick="login_visible()">ВХОД</button>
+                    <a href="create-acc.html" id="registration">РЕГИСТРАЦИЯ</a>
+                </div>
+                <div id="login-notvisible">
+                    <form action="" method="POST">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <nav class="top-nav">
+            <ul class="navbar">
+                <li><a href="main.html">Главная</a></li>
+                <li class="nav-nested"><span>Жанры</span>
+                    <ul class="nav-inner">
+                        <li><a href="anime.html">Аниме</a></li>
+                        <li><a href="action.html">Боевик</a></li>
+                        <li><a href="war.html">Военный</a></li>
+                        <li><a href="comedy.html">Комедия</a></li>
+                        <li><a href="cartoon.html">Мультфильм</a></li>
+                        <li><a href="sport.html">Спорт</a></li>
+                        <li><a href="horror.html">Ужасы</a></li>
+                        <li><a href="fantasy.html">Фантастика</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.kinonews.ru/kassa_top100/">TOP-100</a></li>
+            </ul>
+
+            
+            <button id="menu" onclick="secondVisible()">Меню</button>
+            <ul id="second-navbar">
+                <li><a href="">Главная</a></li>
+                <li class="nav-nested" onclick="secondNavGenre()">
+                    <span>Жанры</span>
+                    <ul class="nav-inner" id="second-nav-genre">
+                        <li><a href="anime.html">Аниме</a></li>
+                        <li><a href="action.html">Боевик</a></li>
+                        <li><a href="war.html">Военный</a></li>
+                        <li><a href="comedy.html">Комедия</a></li>
+                        <li><a href="cartoon.html">Мультфильм</a></li>
+                        <li><a href="sport.html">Спорт</a></li>
+                        <li><a href="horror.html">Ужасы</a></li>
+                        <li><a href="fantasy.html">Фантастика</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.kinonews.ru/kassa_top100/">TOP-100</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <div class="soon">
+                <h3 id="soonn">Скоро в кино</h3>
+                <h3 id="soon" onclick="soon()">Скоро в кино</h3>
+                <hr>
+                <div id="soon-block">
+                    <div class="soon-movie">
+                        <a href="movies/new-mutants.html">
+                            <img class="soon-img" src="img/soon/new-mutants.jpg" alt="">
+                        </a>
+                        <a class="movie-title" href="movies/new-mutants.html">Новые мутанты</a>
+                    </div>
+
+                    <div class="soon-movie">
+                        <a href="movies/mulan.html">
+                            <img class="soon-img" src="img/soon/mulan.jpg" alt="">
+                        </a>
+                        <a class="movie-title" href="movies/mulan.html">Мулан</a>
+                    </div>
+
+                    <div class="soon-movie">
+                        <a href="movies/pobeg-iz-pretorii.html">
+                            <img class="soon-img" src="img/soon/pobeg-iz-pretorii.jpg" alt="">
+                        </a>
+                        <a class="movie-title" href="movies/pobeg-iz-pretorii.html">Побег из Претории</a>
+                    </div>
+
+                    <div class="soon-movie">
+                        <a href="movies/vivarium.html">
+                            <img class="soon-img" src="img/soon/vivarium.jpg" alt="">
+                        </a>
+                        <a class="movie-title" href="movies/vivarium.html">Вивариум</a>
+                    </div>
+
+                    <div class="soon-movie">
+                        <a href="movies/feya.html">
+                            <img class="soon-img" src="img/soon/feya.jpg" alt="">
+                        </a>
+                        <a class="movie-title" href="movies/feya.html">Фея</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+
+            <div class="movie">
+                <img class="m-img" src="img/movies/operaciya-sharovaya-molniya.jpg" alt="">
+                <div class="movie-desc">
+                    <h3><a class="movie-title" href="movies/operaciya-sharovaya-molniya.html">Операция «Шаровая молния»</a></h3>
+                    <ul class="movie-description">
+                        <li>Год выхода:</li>
+                        <li>2018</li>
+                        <li>Жанр:</li>
+                        <li>Боевик</li>
+                    </ul>
+                    <p class="movie-summary">
+                        Фильм основан на событиях, произошедших более 40 лет назад. По сюжету, из Израиля вылетел самолет с обычными гражданами, который вскоре был захвачен террористами. Преступники силой заставили пилотов изменить курс и вынудили их посадить самолет в Уганде...
+                    </p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="movie">
+                <img class="m-img" src="img/movies/plohie-parni-navsegda.png" alt="">
+                <div class="movie-desc">
+                    <h3><a class="movie-title" href="movies/plohie-parni-navsegda.html">Плохие парни 3: Навсегда</a></h3>
+                    <ul class="movie-description">
+                        <li>Год выхода:</li>
+                        <li>2020</li>
+                        <li>Жанр:</li>
+                        <li>Боевик</li>
+                    </ul>
+                    <p class="movie-summary">
+                        Помните двух отчаянных и веселых детективов в исполнении Мартина Лоуренса и Уилла Смита? Так вот они вернулись снова. Плохие парни-3 – это гарантия хорошего настроения во время просмотра. Режиссер Джо Карнахан не смог удержаться от того, чтобы снова вывести на экраны полюбившихся персонажей...
+                    </p>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="support footer-flex-item">
+                <h4>Поддержка</h4>
+                <ul>
+                    <li>support@example.com</li>
+                    <li>+0123456789</li>
+                </ul>
+            </div>
+
+            <div class="social-network footer-flex-item">
+                <h4>Мы в соц.сетях</h4>
+                <ul>
+                    <li><a href="https://vk.com/" class="soc-network"><img src="img/icons-and-logos/vk.png" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/" class="soc-network"><img src="img/icons-and-logos/insta.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/" class="soc-network"><img src="img/icons-and-logos/facebook.png" alt=""></a></li>
+                    <li><a href="https://twitter.com/" class="soc-network"><img src="img/icons-and-logos/twitter.png" alt=""></a></li>
+                </ul>
+            </div>
+
+            <span>© 2020 "EasyMovies.com"</span>
+        </footer>
+
+    </div>
+    <button id="go-top" type="button" title="Наверх"><span>^</span></button>
+</body>
+</html>
